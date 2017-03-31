@@ -296,7 +296,7 @@ i { color: #9a9a9a; margin:0}
 .bg-yellow{ background: #e6af2a !important; }
 .bg-deep-yellow{ background: #c8a64b !important; }
 .bg-golden-yellow{ background: #ffd800 !important; }
-.bg-fast-yellow{ background: #fdd947 !important; }
+.bg-fast-yellow{ background: #ffa000 !important; }
 .bg-dark-gray{ background: #252525 !important; }
 .bg-mid-gray{ background: #d4d4d4 !important; }
 .bg-mid-gray2{ background: #b2b2b2 !important; }
@@ -377,7 +377,6 @@ i { color: #9a9a9a; margin:0}
 .background-position-left {background-position: left center !important;}
 .background-position-right {background-position: right center !important;}
 .background-position-top {background-position: right top !important;}
-
 /* ===================================
     Custom
 ====================================== */
@@ -387,7 +386,7 @@ i { color: #9a9a9a; margin:0}
 /* separator */
 .separator-line-full { height: 1px; margin: 0 auto; width: 100%;}
 .separator-line { height: 2px; margin: 0 auto; width: 30px; margin:7% auto}
-.separator-line-thick { height: 4px; margin: 0 auto; width: 30px; margin:7% auto}
+.separator-line-thick { height: 4px; margin: 0 auto; width: 30px;}
 .separator-line-thick-full { height: 4px; margin: 0 auto; width: 100%; margin:7% auto}
 .separator-line-thick-long { height: 3px; margin: 0 auto; width: 80px; margin:7% auto}
 .separator-line-medium-thick { height: 6px; margin: 0 auto; width: 45%; margin:7% auto}
@@ -398,6 +397,7 @@ i { color: #9a9a9a; margin:0}
 .wide-separator-line { height: 1px;  background-color:#e5e5e5; margin:5% 15px;}
 .title-separator-line { display: inline-block; height: 3px; margin-right: 5px; width: 11px; }
 .divider-line {height: 1px; margin: 0 auto; width: 100%; background: rgba(0,0,0,.1);}
+.markerTwo {padding-bottom: 10px; opacity: 1; filter: grayscale(0%);}
 
 /* margin */
 .margin-one-half{margin:0.5% !important}
@@ -952,7 +952,7 @@ ul.portfolio-filter-tab-style-6 { margin: 220px 50px 0 0;}
 .grid-gallery ul { list-style: none; padding: 0; }
 .grid-gallery figure { margin: 0; position: relative }
 .grid-gallery figure img { display: block; width: 100%; opacity: 1; cursor: pointer; }
-.grid-gallery figcaption h3 { margin: 0 0 8px; padding:0; text-transform:uppercase; }
+.grid-gallery c h3 { margin: 0 0 8px; padding:0; text-transform:uppercase; }
 .grid-gallery figcaption i { font-size: 32px; color: #aeaeae; margin-bottom: 20px}
 .grid { margin: 0 auto; }
 .grid li { box-sizing: border-box; float: left; margin: 0; display: inline-table;  }
@@ -1051,6 +1051,7 @@ ul.portfolio-filter-tab-style-6 { margin: 220px 50px 0 0;}
 /* onepage portfolio details popup */
 .popup-bg .mfp-content {height: 100%}
 .popup-info { display: none}
+.popup-main {padding-left: 200px}
 .half-project-bg {height: 1000px}
 .slider-typographi-text .slider-subtitle{ line-height: 64px !important}
 .spend-year, .spend-time{border-right: 1px solid #e5e5e5; float: left; font-size: 30px; font-weight: 400; letter-spacing: 2px; line-height: 47px; min-height: 95px; text-align: center; width: 50%;}
@@ -1779,10 +1780,12 @@ body {
 }
 .footerLogo {
   text-align: center;
+  margin-left: 6%
 }
 .sideNav {
   float: right;
-  padding-top: 150px;
+  width: 200px;
+  padding-top: 30px;
   font-size: 16px;
 
   font-weight: 600;
@@ -1795,6 +1798,7 @@ body {
   /*background-color:rgba(120,120,120, .8);*/
   border-radius: 5px;
   padding-bottom: 7px;
+  margin-left: 25%;
 }
 .navLi {
   /*padding-bottom: 10px;*/
@@ -1806,34 +1810,34 @@ body {
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
-  padding-left: 101px;
+  padding-left: 200px;
 }
 .secondRow {
-  padding-left: 100px;
+  padding-left: 200px;
 }
 .thirdRow {
-  padding-left: 100px;
+  padding-left: 200px;
 }
 .fourthRow {
-  padding-left: 100px;
+  padding-left: 200px;
 }
 .fifthRow {
-  padding-left: 100px;
+  padding-left: 200px;
 }
 .sixthRow {
-  padding-left: 100px;
+  padding-left: 200px;
 }
 .seventhRow {
-  padding-left: 85px;
+  padding-left: 200px;
 }
 .eighthRow {
-  padding-left: 100px;
+  padding-left: 200px;
 }
 .ninthRow {
- padding-left: 104px;
+ padding-left: 200px;
 }
 .tenthRow {
-  padding-left: 100px;
+  padding-left: 200px;
 }
 .menu-button {
   display:none;
@@ -1853,6 +1857,22 @@ body {
 .steelLi {
   text-align: -webkit-right;
 }
+.gridLogo {
+  background: #ffffff;
+  pointer-events: none !important;
+}
+
+.bg-dark-gray {
+    background: #252525;
+}
+.position-relative {
+  position: relative !important;
+  z-index: 5;
+}
+.imagePageTwoText {
+  color: #ffa000;
+}
+
 
 
 
@@ -1871,6 +1891,10 @@ body {
       padding-right: 0px;
       padding-bottom: 0px;
       padding-left: 0;
+
+    }
+    .secondBackgroundImage {
+      background-size: 760px 500px !important;
     }
     .secondRow {
       padding-left: 0;
@@ -1910,12 +1934,22 @@ body {
 @media only screen and (max-width: 1000px) {
   .phoneNumber {
     font-size: 100px;
+    padding-top: 30px;
+    padding-bottom: 75px;
   }
 }
 @media only screen and (max-width: 700px) {
   .phoneNumber {
-    font-size: 60px;
+    font-size: 70px;
+    padding-top: 30px;
+    padding-bottom: 55px;
   }
+  @media only screen and (max-width: 500px) {
+    .phoneNumber {
+      font-size: 60px;
+      padding-top: 20px;
+      padding-bottom: 45px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1928,3 +1962,43 @@ body {
      font-size: 30px !important;
    }
   }
+  @media only screen and (max-width: 500px) {
+    .website {
+      font-size: 22px !important;
+      text-align: center;
+    }
+  }
+    .footerText {
+      font-size: 10px !important;
+      text-align: center;
+    }
+}
+  @media only screen and (max-width: 1090px) {
+      .contact {
+        font-size: 35px !important;
+          }
+        }
+        @media only screen and (max-width: 946px) {
+            .contact {
+              font-size: 25px !important;
+              padding-bottom: 5px
+                }
+              }
+              @media only screen and (max-width: 660px) {
+                  .contact {
+                    font-size: 20px !important;
+                    padding-bottom: 5px
+                      }
+                    }
+                    @media only screen and (max-width: 520px) {
+                        .contact {
+                          font-size: 25px !important;
+                          padding-bottom: 5px
+                            }
+                          }
+          @media only screen and (max-width: 765px) {
+              .quoteAboutUs {
+                height: auto; !important;
+                  }
+                }
+   }
