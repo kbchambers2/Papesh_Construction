@@ -397,6 +397,7 @@ i { color: #9a9a9a; margin:0}
 .wide-separator-line { height: 1px;  background-color:#e5e5e5; margin:5% 15px;}
 .title-separator-line { display: inline-block; height: 3px; margin-right: 5px; width: 11px; }
 .divider-line {height: 1px; margin: 0 auto; width: 100%; background: rgba(0,0,0,.1);}
+.markerTwo {padding-bottom: 10px; opacity: 1; filter: grayscale(0%);}
 
 /* margin */
 .margin-one-half{margin:0.5% !important}
@@ -1050,6 +1051,7 @@ ul.portfolio-filter-tab-style-6 { margin: 220px 50px 0 0;}
 /* onepage portfolio details popup */
 .popup-bg .mfp-content {height: 100%}
 .popup-info { display: none}
+.popup-main {padding-left: 200px}
 .half-project-bg {height: 1000px}
 .slider-typographi-text .slider-subtitle{ line-height: 64px !important}
 .spend-year, .spend-time{border-right: 1px solid #e5e5e5; float: left; font-size: 30px; font-weight: 400; letter-spacing: 2px; line-height: 47px; min-height: 95px; text-align: center; width: 50%;}
@@ -1778,6 +1780,7 @@ body {
 }
 .footerLogo {
   text-align: center;
+  margin-left: 6%
 }
 .sideNav {
   float: right;
@@ -1795,6 +1798,7 @@ body {
   /*background-color:rgba(120,120,120, .8);*/
   border-radius: 5px;
   padding-bottom: 7px;
+  margin-left: 25%;
 }
 .navLi {
   /*padding-bottom: 10px;*/
@@ -1855,16 +1859,18 @@ body {
 }
 .gridLogo {
   background: #ffffff;
+  pointer-events: none !important;
 }
-.gridLogo:hover {
-  opacity: 1;
-}
+
 .bg-dark-gray {
     background: #252525;
 }
 .position-relative {
   position: relative !important;
   z-index: 5;
+}
+.imagePageTwoText {
+  color: #ffa000;
 }
 
 
