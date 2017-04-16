@@ -63,7 +63,7 @@ Table of contents
     Reset
 ====================================== */
 
-body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:13px; color:#626262; line-height:23px; letter-spacing: 0.02em }
+body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:13px; color:#626262; line-height:23px; letter-spacing: 0.02em; background: white }
 a, a:active{ color: #ffa000; text-decoration: none; }
 a:hover, a:focus{ color: #272727;  text-decoration: none}
 a:focus {outline: none !important; }
@@ -1714,11 +1714,11 @@ footer img {max-width: 156px;}
 
 
 /*Custom CSS*/
-body {
-  /*background-color: lightgray;*/
+
+
+html {
+  background: white !important;
 }
-
-
 .headerText {
   color: white;
   font-size: 45px !important;
@@ -1810,9 +1810,9 @@ body {
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
-  padding-left: 200px;
+
 }
-.secondRow {
+/*.secondRow {
   padding-left: 200px;
 }
 .thirdRow {
@@ -1838,7 +1838,7 @@ body {
 }
 .tenthRow {
   padding-left: 200px;
-}
+}*/
 .menu-button {
   display:none;
 }
@@ -1878,7 +1878,7 @@ body {
 
 @media only screen and (max-width: 1100px) {
   body {
-    background-color: white;
+    background-color: white !important;
   }
   .menu-button {
     display:block;
