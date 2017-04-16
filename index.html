@@ -37,16 +37,18 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" type="text/css" href="css/simpletextrotator.css" />
     <link rel="stylesheet" type="text/css" href="css/carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/sidebar_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
 
-
-
-    <!--[if IE]>
-            <script src="js/html5shiv.js"></script>
-        <![endif]-->
 </head>
 
-<body>
+
+<body class="">
+
+  <input type="checkbox" id="sidebartoggler" name="" value="">
+  <div class="page-wrap">
+
     <!-- navigation -->
     <div class="menu-wrap pull-menu">
         <nav class="menu navigation-menu">
@@ -60,7 +62,7 @@
                         <li><a href="#about" class="section-link"><span>01</span>About</a></li>
                         <li><a href="#service" class="section-link"><span>02</span>Service</a></li>
                         <li><a href="#projects" class="section-link"><span>03</span>Projects</a></li>
-                        <li><a href="#people" class="section-link"><span>04</span>People</a></li>
+                        <li><a href="#people" class="section-link"><span>04</span>People</a></li> -->
                         <!-- <li><a href="#blog" class="section-link"><span>05</span>Blog</a></li> -->
                         <li><a href="#contact" class="section-link"><span>05</span>Contact</a></li>
                     </ul>
@@ -82,8 +84,14 @@
     <!-- end navigation -->
 
 
-    <div class="sideNav" id="menu-1">
-        <a class="" href=""><img src="images/logo.png" alt="Papesh Construction Logo" heigth="auto" width="150" style="margin-left: 10%; padding-bottom: 90px" /></a>
+    <div class="sideNav panel" role="navigation">
+
+
+               <label for="sidebartoggler" class="toggle">☰</label>
+
+
+
+        <!-- <a class="" href=""><img src="images/logo.png" alt="Papesh Construction Logo" heigth="auto" width="150" style="margin-left: 10%; padding-bottom: 90px" /></a>
         <ul class="sideNavList" style="background-image:url('images/LeftRuler_copy.png');">
             <li style="">
                 <a class="" href=""><img src="images/PlanLogin_copy.png" alt="" style="padding-left: 12px;" /></a>
@@ -93,10 +101,11 @@
             <li class="navLi" style="padding-top: 30px; padding-left: 10px;"><a href="#projects">PROJECTS</a></li>
             <li class="navLi" style="padding-top: 30px;"><a href="#people" style="padding-left: 31px;">PEOPLE</a></li>
             <li class="navLi" style="padding-bottom: 13px;padding-top: 32px;padding-left: 18px;"><a href="#contact" style="">CONTACT</a></li>
-        </ul>
+        </ul> -->
     </div>
 
 
+<div class="page-content">
     <!-- slider -->
     <section id="home" class="">
         <div class="owl-slider-full owl-carousel owl-theme light-pagination square-pagination dark-pagination-without-next-prev-arrow main-slider" style="height:800px;">
@@ -2019,7 +2028,22 @@
                         </div>
                     </div>
             </section>
+            <div class="sidebar">
+  <ul>
+    <li>Home</li>
+    <li>Projects</li>
+    <li>Clients</li>
+    <li>Blog</li>
+    <li>Contact</li>
+  </ul>
+</div>
             </div>
+          </div>
+          </div>
+
+
+</div>
+
             <!-- end contact section -->
             <!-- footer -->
             <!-- <footer class="wow fadeIn">
@@ -2085,6 +2109,10 @@
             <!-- setting -->
             <script type="text/javascript" src="js/main.js"></script>
             <script type="text/javascript" src="js/jquery.simple-text-rotator.js"></script>
+
+
+
+
             <script>
                 $(".rotate").textrotator({
                     animation: "dissolve",
@@ -2100,7 +2128,10 @@
                         interval: 4000,
                     });
                 });
-            </script>
+                </script>
+
+
+
 
 
 </body>
